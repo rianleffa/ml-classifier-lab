@@ -1,0 +1,93 @@
+{
+  "id": "edf51914-d585-47cc-a4cb-cdbc69ca8a57",
+  "created_at": "2026-10-17T14:16:59.135460+00:00",
+  "metrics": {
+    "accuracy": 0.9181286549707602,
+    "precision": 0.890625,
+    "recall": 0.890625,
+    "f1": 0.890625,
+    "cv_mean": 0.9104021114733737,
+    "cv_std": 0.027875560352709206
+  },
+  "confusion_matrix": [
+    [
+      57,
+      7
+    ],
+    [
+      7,
+      100
+    ]
+  ],
+  "confusion_labels": [
+    "Maligno",
+    "Benigno"
+  ],
+  "classification_report": [
+    {
+      "class": "Maligno",
+      "precision": 0.890625,
+      "recall": 0.890625,
+      "f1": 0.890625,
+      "support": 64
+    },
+    {
+      "class": "Benigno",
+      "precision": 0.9345794392523364,
+      "recall": 0.9345794392523364,
+      "f1": 0.9345794392523364,
+      "support": 107
+    }
+  ],
+  "cv_scores": [
+    0.9298245614035088,
+    0.868421052631579,
+    0.8859649122807017,
+    0.9385964912280702,
+    0.9292035398230089
+  ],
+  "class_summary": [
+    {
+      "label": 0,
+      "name": "Maligno",
+      "support": 64,
+      "correct": 57,
+      "incorrect": 7
+    },
+    {
+      "label": 1,
+      "name": "Benigno",
+      "support": 107,
+      "correct": 100,
+      "incorrect": 7
+    }
+  ],
+  "counts": {
+    "total": 569,
+    "train": 398,
+    "test": 171,
+    "correct": 157,
+    "incorrect": 14,
+    "classes": {
+      "Maligno": 64,
+      "Benigno": 107
+    }
+  },
+  "config": {
+    "algorithm": "DecisionTreeClassifier",
+    "max_depth": 8,
+    "test_size": 0.3,
+    "train_size": 0.7,
+    "random_state": 42,
+    "stratified": true,
+    "cross_validation": "StratifiedKFold (5 partições)",
+    "positive_class": "Maligno"
+  },
+  "elapsed_seconds": 0.1062,
+  "charts": {
+    "confusion-matrix": "/api/runs/edf51914-d585-47cc-a4cb-cdbc69ca8a57/charts/confusion-matrix.png",
+    "cross-validation": "/api/runs/edf51914-d585-47cc-a4cb-cdbc69ca8a57/charts/cross-validation.png",
+    "class-distribution": "/api/runs/edf51914-d585-47cc-a4cb-cdbc69ca8a57/charts/class-distribution.png",
+    "metrics": "/api/runs/edf51914-d585-47cc-a4cb-cdbc69ca8a57/charts/metrics.png"
+  }
+}
