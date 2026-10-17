@@ -1,0 +1,93 @@
+{
+  "id": "e54bb731-dfc1-4049-8eab-c00c0a326cbe",
+  "created_at": "2026-10-17T14:12:59.284257+00:00",
+  "metrics": {
+    "accuracy": 0.9385964912280702,
+    "precision": 0.9069767441860465,
+    "recall": 0.9285714285714286,
+    "f1": 0.9176470588235294,
+    "cv_mean": 0.9226983387672721,
+    "cv_std": 0.02950814116955285
+  },
+  "confusion_matrix": [
+    [
+      39,
+      3
+    ],
+    [
+      4,
+      68
+    ]
+  ],
+  "confusion_labels": [
+    "Maligno",
+    "Benigno"
+  ],
+  "classification_report": [
+    {
+      "class": "Maligno",
+      "precision": 0.9069767441860465,
+      "recall": 0.9285714285714286,
+      "f1": 0.9176470588235294,
+      "support": 42
+    },
+    {
+      "class": "Benigno",
+      "precision": 0.9577464788732394,
+      "recall": 0.9444444444444444,
+      "f1": 0.951048951048951,
+      "support": 72
+    }
+  ],
+  "cv_scores": [
+    0.956140350877193,
+    0.868421052631579,
+    0.9210526315789473,
+    0.9298245614035088,
+    0.9380530973451328
+  ],
+  "class_summary": [
+    {
+      "label": 0,
+      "name": "Maligno",
+      "support": 42,
+      "correct": 39,
+      "incorrect": 3
+    },
+    {
+      "label": 1,
+      "name": "Benigno",
+      "support": 72,
+      "correct": 68,
+      "incorrect": 4
+    }
+  ],
+  "counts": {
+    "total": 569,
+    "train": 455,
+    "test": 114,
+    "correct": 107,
+    "incorrect": 7,
+    "classes": {
+      "Maligno": 42,
+      "Benigno": 72
+    }
+  },
+  "config": {
+    "algorithm": "DecisionTreeClassifier",
+    "max_depth": 4,
+    "test_size": 0.2,
+    "train_size": 0.8,
+    "random_state": 42,
+    "stratified": true,
+    "cross_validation": "StratifiedKFold (5 partições)",
+    "positive_class": "Maligno"
+  },
+  "elapsed_seconds": 0.0806,
+  "charts": {
+    "confusion-matrix": "/api/runs/e54bb731-dfc1-4049-8eab-c00c0a326cbe/charts/confusion-matrix.png",
+    "cross-validation": "/api/runs/e54bb731-dfc1-4049-8eab-c00c0a326cbe/charts/cross-validation.png",
+    "class-distribution": "/api/runs/e54bb731-dfc1-4049-8eab-c00c0a326cbe/charts/class-distribution.png",
+    "metrics": "/api/runs/e54bb731-dfc1-4049-8eab-c00c0a326cbe/charts/metrics.png"
+  }
+}

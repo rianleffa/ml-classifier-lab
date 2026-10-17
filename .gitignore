@@ -1,0 +1,10 @@
+backend/.venv/
+backend/__pycache__/
+backend/app/__pycache__/
+backend/artifacts/
+.matplotlib/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.npm-cache/
+*.py[cod]
